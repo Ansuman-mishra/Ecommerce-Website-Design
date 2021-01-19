@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/8d26c97e86.js" crossorigin="anonymous"></script>
+      <title>All Product-Ecommerce website</title>
+</head>
+
+<body>
+      <div class="container">
+            <div class="navbar">
+                  <div class="logo">
+                        <a href="./index.html"><img src="./img/logo2.png" alt="logo" width="125px"></a>
+                  </div>
+                  <nav>
+                        <ul id="menubar">
+                              <li><a href="./index.html">Home</a></li>
+                              <li><a href="./product.html">Products</a></li>
+                              <li><a href="">About</a></li>
+                              <li><a href="">Contact</a></li>
+                              <li><a href="./account.html">Account</a></li>
+                        </ul>
+                  </nav>
+                  <a href="./cart.html"><img src="./img/cart.png" width="30px"></a>
+                  <img src="./img/menu.png" class="menu_icon" onclick="menu_bar()">
+            </div>
+      </div>
+      <!-- ------------------CART ITEMS DETAILS------------------ -->
+
+      <div class="small_container cart_page">
+            <table>
+                  <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                  </tr>
+                  <tr>
+                        <td>
+                              <div class="cart_info">
+                                    <img src="./img/buy-1.jpg" alt="">
+                                    <div>
+                                          <p>Read printed T-Shirt</p>
+                                          <small>Price: $50</small> <br>
+                                          <a href="">Remove</a>
+                                    </div>
+                              </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$50.00</td>
+                  </tr>
+                  <tr>
+                        <td>
+                              <div class="cart_info">
+                                    <img src="./img/buy-2.jpg" alt="">
+                                    <div>
+                                          <p>Read printed T-Shirt</p>
+                                          <small>Price: $80</small> <br>
+                                          <a href="">Remove</a>
+                                    </div>
+                              </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$80.00</td>
+                  </tr>
+                  <tr>
+                        <td>
+                              <div class="cart_info">
+                                    <img src="./img/buy-3.jpg" alt="">
+                                    <div>
+                                          <p>Read printed T-Shirt</p>
+                                          <small>Price: $70</small> <br>
+                                          <a href="">Remove</a>
+                                    </div>
+                              </div>
+                        </td>
+                        <td><input type="number" value="1"></td>
+                        <td>$70.00</td>
+                  </tr>
+            </table>
+
+            <div class="total_price">
+                  <table>
+                        <tr>
+                              <td>Subtotal</td>
+                              <td>$200</td>
+                        </tr>
+                        <tr>
+                              <td>Tax</td>
+                              <td>$35</td>
+                        </tr>
+                        <tr>
+                              <td>Total</td>
+                              <td>$230</td>
+                        </tr>
+                  </table>
+            </div>
+      </div>
+      <!-- ------------------------footer---------------------- -->
+      <div class="footer">
+            <div class="container">
+                  <div class="row">
+                        <div class="footer_col_1">
+                              <h3>Lorem ipsum dolor sit.</h3>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                              <div class="app_logo">
+                                    <img src="./img/play-store.png" alt="">
+                                    <img src="./img/app-store.png" alt="">
+                              </div>
+                        </div>
+                        <div class="footer_col_2">
+                              <img src="./img/logo-white.png" alt="">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="footer_col_3">
+                              <h3>Usefull Link</h3>
+                              <ul>
+                                    <li>Cupons</li>
+                                    <li>Blog Post</li>
+                                    <li>Return Policy</li>
+                                    <li>Join Affiliate</li>
+                              </ul>
+                        </div>
+                        <div class="footer_col_4">
+                              <h3>Follow Us</h3>
+                              <ul>
+                                    <li>Facebook</li>
+                                    <li>Twitter</li>
+                                    <li>Instagram</li>
+                                    <li>Youtube</li>
+                              </ul>
+                        </div>
+                  </div>
+                  <hr>
+                  <p class="copyright">&copy; copyright 2020 - Ansuman mishra</p>
+            </div>
+      </div>
+      <!-- -------------------------------JS for menu bar-------------------- -->
+      <script>
+            let menubar = document.getElementById("menubar");
+            menubar.style.maxHeight = "0px";
+            function menu_bar() {
+                  if (menubar.style.maxHeight == "0px") {
+                        menubar.style.maxHeight = "200px";
+                  } else {
+                        menubar.style.maxHeight = "0px";
+                  }
+            }
+      </script>
+
+</body>
+
+</html>
